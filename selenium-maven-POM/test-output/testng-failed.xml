@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pomdesign.WebOrderLoginTest">
+      <class name="pomdesign.WebOrderTest">
         <methods>
-          <include name="setUp"/>
-          <include name="loginUsingPOM2"/>
           <include name="closeUp"/>
+          <include name="ProductsTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- pomdesign.WebOrderLoginTest -->
+      </class> <!-- pomdesign.WebOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

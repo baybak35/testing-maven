@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/Users/batuhanaybak/Desktop/HTML_JS_DOM/Selenium/testing-maven/mavenJava/.metadata/.plugins/org.eclipse.jdt.core
+578821060.index

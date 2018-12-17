@@ -29,6 +29,13 @@ public class AllOrdersPage {
 	@FindBy(css="tbody li:nth-child(3)")
 	public WebElement order;
 	
+	@FindBy(id="ctl00_logout")
+	public WebElement logOutLink;
+	
+	public void logout() {
+		logOutLink.click();
+	}
+	
 	
 	
 	
