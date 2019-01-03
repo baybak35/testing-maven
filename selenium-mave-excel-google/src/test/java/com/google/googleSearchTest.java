@@ -17,7 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class googleSearchTest {
 	
 	WebDriver driver=null;
-	Xls_Reader data = new Xls_Reader("/Users/batuhanaybak/Desktop/HTML_JS_DOM/Selenium/testing-maven/selenium-mave-excel-google/testData.xlsx");
+	Xls_Reader data = new Xls_Reader("/Users/batuhanaybak/Desktop/HTML_JS_DOM/Selenium/testing-maven/testing-maven/selenium-mave-excel-google/testData.xlsx");
 	
 	@BeforeTest
 	public void setUp() {
@@ -38,6 +38,8 @@ public class googleSearchTest {
 	public void searchResults() {
 		
 		int rcount = data.getRowCount("data");
+		System.out.println(rcount);
+		
 		for(int i=2; i<=rcount; i++) {
 			
 			String item = data.getCellData("data", "Item", i);
@@ -51,6 +53,10 @@ public class googleSearchTest {
 			data.setCellData("data", "SearchResult", i, result);
 			driver.navigate().back();
 		}
+		
+		
+		
+		
 	}
 	
 }
